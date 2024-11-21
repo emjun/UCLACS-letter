@@ -1,0 +1,52 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% UCLA CS letter LaTex template 
+%%      v1 created by Bolei Zhou (bolei@cs.ucla.edu)
+%%      last updated: Nov 21, 2024
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt, a4paper, hidelinks]{letter} % Set the font size (10pt, 11pt and 12pt) and paper size 
+
+\input{preamble}
+
+\begin{document}
+\begin{minipage}{0.6\textwidth}
+\vspace{-17mm}
+\includegraphics[width=3in]{asset/UCLA_CS.png}\\
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}\raggedright
+\vspace{-20mm}
+\footnotesize{
+%\textbf{\color[HTML]{005587}UCLA Computer Science Department }\\
+277 Engineering VI\\
+404 Westwood Plaza\\
+Los Angeles, CA 90095, USA \\
+\url{www.cs.ucla.edu}}
+\end{minipage}
+\hrule
+\vspace{3mm}
+\rightline{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Your letter content start here
+% you can directly write here or create a new file as the letter content (recommended)
+
+\input{letter-todd.tex}
+
+%%% Your letter content ends here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Please do not hesitate to contact me at \href{mailto:xyz@cs.ucla.edu}{xyz@cs.ucla.edu} if you need any additional information.
+
+\vspace{+2mm}
+Sincerely,
+
+
+%%%%% Your personal info
+\includegraphics[width=1.4in]{asset/signature.png}
+
+\textbf{John Doe}\\
+Professor\\
+Computer Science Department \\
+University of California, Los Angeles
+\end{document}
