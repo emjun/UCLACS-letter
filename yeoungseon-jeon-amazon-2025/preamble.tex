@@ -1,0 +1,34 @@
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{eso-pic}
+\usepackage[export]{adjustbox}
+\usepackage{hyperref}
+\urlstyle{same}
+\usepackage{xcolor}
+
+%% font type. You can modify it here to a different font. 
+%\usepackage{helvet}
+%\renewcommand{\familydefault}{\sfdefault}
+\usepackage[sfdefault]{carlito}
+%%
+
+%% margin configuration
+\geometry{
+	top=3cm,
+	bottom=3cm,
+	left=2cm,
+	right=2cm,
+}
+\setlength{\parskip}{16pt}
+\newcommand{\paragraph}[1]{\noindent\textbf{#1}\quad}
+
+%% background seal image
+\newcommand\BackgroundPicture{
+   \put(0,0){
+     \parbox[b][\paperheight]{\paperwidth}{
+       \vfill
+		%\node[opacity=.06]
+        \centering\includegraphics[width=0.3\paperwidth,height=0.3\paperheight,keepaspectratio]{../asset/campus-seal-light.jpg}
+       \vfill
+     }}}
+\AddToShipoutPicture{\BackgroundPicture}
